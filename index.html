@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Who's Watching?</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background: #141414;
+        color: #fff;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .profile-select-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      .profiles {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      .profile:hover {
+        transform: scale(1.08);
+      }
+      .profile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        border: 3px solid transparent;
+        transition: border 0.2s;
+      }
+      .profile:hover img {
+        border: 3px solid #fff;
+      }
+      .profile-name {
+        margin-top: 16px;
+        font-size: 1.2rem;
+        color: #b3b3b3;
+        letter-spacing: 1px;
+      }
+      .manage-btn {
+        margin-top: 50px;
+        background: transparent;
+        border: 1px solid #808080;
+        color: #808080;
+        padding: 8px 24px;
+        border-radius: 2px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .manage-btn:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-select-title">Who's watching?</div>
+    <div class="profiles">
+      <a href="new.html" class="profile">
+        <img src="profile2.png" alt="Srii" />
+        <div class="profile-name">Srii</div>
+      </a>
+      <a href="new.html" class="profile">
+        <img src="profile3.jpg" alt="Srii" />
+        <div class="profile-name">Home</div>
+      </a>
+      <a href="new.html" class="profile">
+        <img src="profile4.jpg" alt="Kids" />
+        <div class="profile-name">Kids</div>
+      </a>
+      <a href="new.html" class="profile">
+        <img src="profile5.jpg" alt="Add Profile" />
+        <div class="profile-name">Guest</div>
+      </a>
+    </div>
+    <button class="manage-btn">Manage Profiles</button>
+  </body>
+</html>
